@@ -1,25 +1,21 @@
-import logo from "./logo.svg";
+// App.js
+import React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import About from "./components/About";
+import Shop from "./components/Shop";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Hello World! This is
-          a test.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" />
+      </Routes>
+    </HashRouter>
   );
 }
 
