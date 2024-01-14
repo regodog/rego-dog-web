@@ -9,7 +9,7 @@ const Food = () => {
       <h2>Food</h2>
       <div className="product-grid">
         {products.food.map((product) => (
-          <Link to={`/shop/food/${product.link}`}>
+          <Link to={`/shop/food/${product.link}`} className="link">
             <ProductDisplay
               key={product.link + "-food-div"}
               name={product.name}

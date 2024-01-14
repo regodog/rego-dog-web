@@ -80,7 +80,7 @@ h1 {
   }
 
   .ban-img{
-    width: 150px;
+    max-width: 150px;
     height: auto;
     position: absolute;
     border-radius: 50px;
