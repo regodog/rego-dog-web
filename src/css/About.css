@@ -1,0 +1,17 @@
+section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.img-wrap{
+    text-align: center;
+}
+
+.img-abt{
+    width: 800px;
+    height: auto;
+}

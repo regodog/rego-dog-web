@@ -1,0 +1,48 @@
+{
+  "textile": [
+    {
+      "name": "Textile 1",
+      "link": "textile1",
+      "price": 29.99,
+      "img": "20211031_133303.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    },
+    {
+      "name": "Textile 2",
+      "link": "textile2",
+      "price": 39.99,
+      "img": "20211031_133303.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    }
+  ],
+  "food": [
+    {
+      "name": "Product 1",
+      "link": "product1",
+      "price": 29.99,
+      "img": "IMG_0932.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    },
+    {
+      "name": "Product 2",
+      "link": "product2",
+      "price": 39.99,
+      "img": "IMG_0932.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    },
+    {
+      "name": "Product 3",
+      "link": "product3",
+      "price": 49.99,
+      "img": "IMG_0932.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    },
+    {
+      "name": "Product 4",
+      "link": "product4",
+      "price": 19.99,
+      "img": "IMG_0932.JPG",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."
+    }
+  ]
+}

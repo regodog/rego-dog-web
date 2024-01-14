@@ -78,3 +78,12 @@ h1 {
   .list-wrap{
     background-color: #333;
   }
+
+  .ban-img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    border-radius: 50px;
+    margin-left: 70px;
+    left: 0;
+  }

@@ -1,0 +1,16 @@
+.product{
+    background-color: lightgray; 
+    margin: 20px;
+    width: 210px;
+    padding-bottom: 10px;
+}
+
+.product>img{
+    width: 100%;
+    height: auto;
+}
+
+.product>p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
