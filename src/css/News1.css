@@ -1,19 +1,11 @@
-section{
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-h2{
-    text-align: center;
-}
-
-.img-wrap{
-    text-align: center;
+.news-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
     margin: 20px;
 }
 
-
-.img-abt {
+.news-gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -21,16 +13,16 @@ h2{
     transition: transform 0.3s ease-in-out;
 }
 
-.img-abt:hover {
+.news-gallery img:hover {
     transform: scale(1.5);
 }
 
-.abt-grid-wrap {
+.news1-wrap-grid {
     display: flex;
     flex-direction: row;
 }
 
-.abt-paragraph-wrap {
+.news-paragraph-wrap {
     margin: 20px;
     margin-top: 0px;
 }

@@ -1,0 +1,22 @@
+.news-grid-wrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.news-link-display {
+    text-decoration: none;
+    color: black;
+}
+
+.news-side-panel {
+    padding: 30px;
+    background-color: #d3d3d3;
+    height: fit-content;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.news-search-box {
+    padding: 8px;
+    font-size: 16px;
+}

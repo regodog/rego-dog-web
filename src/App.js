@@ -9,13 +9,17 @@ import Food from "./components/Food";
 import Product from "./utils/Product";
 import "./App.css";
 import products from "./products.json";
+import News from "./components/News";
+import news from "./news.json";
+import News1 from "./utils/News1";
 
 function App() {
   return (
     <HashRouter>
       <Header />
       <Routes>
-        <Route exact path="/" element={<About />} />
+        <Route exact path="/" element={<News />} />
+        <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/textile" element={<Textile />} />
         <Route path="/shop/food" element={<Food />} />
@@ -47,6 +51,38 @@ function App() {
             }
           ></Route>
         ))}
+        {news.news.map((newsItem) => {
+          let newsComponent;
+
+          switch (newsItem.template) {
+            case "News1":
+              newsComponent = (
+                <News1
+                  header={newsItem.header}
+                  date={newsItem.date}
+                  img={newsItem.img}
+                  paragraph={newsItem.paragraph}
+                />
+              );
+              break;
+            default:
+              newsComponent = (
+                <News1
+                  header={newsItem.header}
+                  date={newsItem.date}
+                  img={newsItem.img}
+                  paragraph={newsItem.paragraph}
+                />
+              );
+          }
+          return (
+            <Route
+              key={newsItem.link + "-news"}
+              path={`/${newsItem.link}`}
+              element={newsComponent}
+            />
+          );
+        })}
         <Route path="/contact" />
       </Routes>
     </HashRouter>

@@ -1,0 +1,26 @@
+{
+    "news": [
+      {
+        "header": "Test 1",
+        "link": "test1",
+        "template": "News1",
+        "thumbnail": "2.jpg",
+        "date": "1/28/2024",
+        "img": ["32.jpg", "2.jpg"],
+        "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."]
+      },
+      {
+        "header": "Test 2",
+        "link": "test2",
+        "template": "News1",
+        "thumbnail": "32.jpg",
+        "date": "12/26/2023",
+        "img": ["32.jpg"],
+        "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique."]
+      }
+    ] 
+  }

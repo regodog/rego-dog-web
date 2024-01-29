@@ -1,0 +1,22 @@
+.news-display-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.news-thumbnail{
+    width: 200px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.news-box-wrap{
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.news-box-wrap:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}

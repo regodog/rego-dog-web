@@ -1,89 +1,148 @@
 h1 {
-    font-size: 2.5em; /* Adjust the font size as needed */
-    color: white; /* Set the text color */
-  }
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-    text-align: center; /* Center the text in the navbar */
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    display: inline-block; 
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    display: inline-block;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #3498db;
-    color: white;
-    border-radius: 15px;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: white;
-    background-color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #3498db;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .list-wrap{
-    background-color: #333;
-  }
+  font-size: 2.5em; /* Adjust the font size as needed */
+  color: white; /* Set the text color */
+}
 
-  .ban-img{
-    max-width: 150px;
-    height: auto;
-    position: absolute;
-    border-radius: 50px;
-    margin-left: 70px;
-    left: 0;
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  text-align: center; /* Center the text in the navbar */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  display: inline-block; 
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #3498db;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  background-color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #3498db;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.list-wrap{
+  background-color: #333;
+}
+
+.ban-img{
+  max-width: 150px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-wrap-banner {
+  text-align: left;
+  width: fit-content;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.flags{
+  text-align: right;
+  width: fit-content;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-right: 20px;
+}
+
+img.img-flag{
+  width: 45px;
+  height: 30px;
+}
+
+@media (max-width: 650px) {
+  .img-wrap-banner {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: auto;
+    left: auto;
   }
+  .flags{
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 0px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-left: 0px;
+  }
+}
+
+.lang-button{
+  border-width: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 45px;
+  margin: 5px;
+}
+
+.lang-button:hover{
+  cursor: pointer;
+}
+
+.lang-button:disabled > .img-flag {
+  opacity: 0.2;
+  cursor: not-allowed;
+}

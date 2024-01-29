@@ -8,13 +8,13 @@ const Shop = () => {
     <section>
       <h2>Shop</h2>
       <div className="product-grid">
-        <Link to="/shop/textile">
+        <Link className="link" to="/shop/textile">
           <div className="product">
             <img src={textile} alt="textile"></img>
             <p>Textile</p>
           </div>
         </Link>
-        <Link to="/shop/food">
+        <Link className="link" to="/shop/food">
           <div className="product">
             <img src={food} alt="food"></img>
             <p>Food</p>
