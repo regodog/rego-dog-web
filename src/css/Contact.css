@@ -1,0 +1,11 @@
+footer {
+    text-align: center; 
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    margin-top: 20px;
+}
+
+.contact-social-icons a {
+    margin: 20px;
+}

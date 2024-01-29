@@ -47,6 +47,7 @@ const Header = () => {
           </div>
         </div>
         <Link to="/cart">Cart</Link>
+        <Link to="/Contact">Contact</Link>
       </div>
       <div className="flags">
         <button onClick={czToEng} className="lang-button" disabled={isEng}>

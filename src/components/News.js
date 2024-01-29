@@ -6,31 +6,56 @@ import React, { useState } from "react";
 
 const News = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [found, setFound] = useState(true);
 
   const handleSearch = (value) => {
     setSearchTerm(value);
-    // Add any additional search logic here if needed
+    const wasFound = news.news.some(
+      (newsItem) =>
+        value === "" ||
+        newsItem.paragraph.some((str) =>
+          str.toLowerCase().includes(value.toLowerCase())
+        ) ||
+        newsItem.date.includes(value.toLowerCase()) ||
+        newsItem.header.toLowerCase().includes(value.toLowerCase())
+    );
+    setFound(wasFound);
   };
+
+  const searchedRes = news.news.map(
+    (newsItem) =>
+      (searchTerm === "" ||
+        newsItem.paragraph.some((str) =>
+          str.toLowerCase().includes(searchTerm.toLowerCase())
+        ) ||
+        newsItem.date.includes(searchTerm.toLowerCase()) ||
+        newsItem.header.toLowerCase().includes(searchTerm.toLowerCase())) && (
+        <Link
+          key={newsItem.link}
+          to={newsItem.link}
+          className="news-link-display"
+        >
+          <NewsDisplay
+            header={newsItem.header}
+            date={newsItem.date}
+            paragraph={newsItem.paragraph}
+            thumbnail={newsItem.thumbnail}
+          />
+        </Link>
+      )
+  );
   return (
     <section>
       <h2>News</h2>
       <div className="news-grid-wrap">
-        <div className="news-grid">
-          {news.news.map((newsItem) => (
-            <Link
-              key={newsItem.link}
-              to={newsItem.link}
-              className="news-link-display"
-            >
-              <NewsDisplay
-                header={newsItem.header}
-                date={newsItem.date}
-                paragraph={newsItem.paragraph}
-                thumbnail={newsItem.thumbnail}
-              />
-            </Link>
-          ))}
-        </div>
+        {found ? (
+          <div className="news-grid">{searchedRes}</div>
+        ) : (
+          <div className="news-no-resut-found">
+            <p>No results found.</p>
+          </div>
+        )}
+
         <div className="news-side-panel">
           <input
             type="text"
@@ -38,7 +63,6 @@ const News = () => {
             placeholder="Search..."
             onChange={(e) => handleSearch(e.target.value)}
           />
-          <p>Search Term: {searchTerm}</p>
         </div>
       </div>
     </section>

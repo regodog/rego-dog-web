@@ -12,6 +12,7 @@ import products from "./products.json";
 import News from "./components/News";
 import news from "./news.json";
 import News1 from "./utils/News1";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -83,8 +84,9 @@ function App() {
             />
           );
         })}
-        <Route path="/contact" />
+        <Route path="/contact"/>
       </Routes>
+      <Contact />
     </HashRouter>
   );
 }
