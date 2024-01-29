@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/rego-dog-web/static/css/main.842fb5ec.css",
-    "main.js": "/rego-dog-web/static/js/main.605f39b9.js",
+    "main.css": "/rego-dog-web/static/css/main.0960bc90.css",
+    "main.js": "/rego-dog-web/static/js/main.7e4f51bb.js",
     "static/js/787.e973d048.chunk.js": "/rego-dog-web/static/js/787.e973d048.chunk.js",
     "static/media/20180325_163727.jpg": "/rego-dog-web/static/media/20180325_163727.66f28e56df72d564d5aa.jpg",
     "static/media/20211031_133303.jpg": "/rego-dog-web/static/media/20211031_133303.3400dfaeb77a5cbd6b47.jpg",
     "static/media/32.jpg": "/rego-dog-web/static/media/32.13b1f843f6f9c977700c.jpg",
+    "static/media/2.jpg": "/rego-dog-web/static/media/2.4d9864776817685b4a41.jpg",
     "static/media/IMG_0932.JPG": "/rego-dog-web/static/media/IMG_0932.4d542749cf3bb7fe0314.JPG",
     "static/media/IMG_0414.JPG": "/rego-dog-web/static/media/IMG_0414.18bc006dc650f2e32f23.JPG",
+    "static/media/usflag.png": "/rego-dog-web/static/media/usflag.7583a71c4f22794520d4.png",
     "index.html": "/rego-dog-web/index.html",
-    "main.842fb5ec.css.map": "/rego-dog-web/static/css/main.842fb5ec.css.map",
-    "main.605f39b9.js.map": "/rego-dog-web/static/js/main.605f39b9.js.map",
+    "main.0960bc90.css.map": "/rego-dog-web/static/css/main.0960bc90.css.map",
+    "main.7e4f51bb.js.map": "/rego-dog-web/static/js/main.7e4f51bb.js.map",
     "787.e973d048.chunk.js.map": "/rego-dog-web/static/js/787.e973d048.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.842fb5ec.css",
-    "static/js/main.605f39b9.js"
+    "static/css/main.0960bc90.css",
+    "static/js/main.7e4f51bb.js"
   ]
 }
