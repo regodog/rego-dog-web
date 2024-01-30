@@ -2,6 +2,7 @@
     "news": [
       {
         "header": "Test 1",
+        "header_cz": "Test 1 cj",
         "link": "test1",
         "template": "News1",
         "thumbnail": "2.jpg",
@@ -9,10 +10,12 @@
         "img": ["32.jpg", "2.jpg"],
         "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Only you have this."]
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Only you have this."],
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
       },
       {
         "header": "Test 2",
+        "header_cz":"Test 2 cj",
         "link": "test2",
         "template": "News1",
         "thumbnail": "32.jpg",
@@ -20,7 +23,21 @@
         "img": ["32.jpg"],
         "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. No I don't."]
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. No I don't."],
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
+      },
+      {
+        "header": "Test 3",
+        "header_cz":"Test 3 cj",
+        "link": "test3",
+        "template": "News2",
+        "youtube": "https://www.youtube.com/embed/uBnpq0DDCps",
+        "thumbnail": "32.jpg",
+        "date": "1/29/2024",
+        "img": ["32.jpg"],
+        "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. No I don't."],
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
       }
     ] 
   }

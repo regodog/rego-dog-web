@@ -105,8 +105,8 @@ h1 {
 }
 
 img.img-flag{
-  width: 45px;
-  height: 30px;
+  width: 35px;
+  height: 23.325px;
 }
 
 @media (max-width: 650px) {
@@ -133,8 +133,8 @@ img.img-flag{
 .lang-button{
   border-width: 0px;
   padding: 0px;
-  height: 30px;
-  width: 45px;
+  height: 23.325px;
+  width: 35px;
   margin: 5px;
 }
 

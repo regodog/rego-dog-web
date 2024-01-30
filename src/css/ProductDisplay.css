@@ -2,6 +2,7 @@
     background-color: lightgray; 
     width: 210px;
     padding-bottom: 10px;
+    height: 100%;
 }
 
 .product:hover {

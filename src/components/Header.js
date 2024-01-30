@@ -24,6 +24,38 @@ const Header = () => {
     }
   };
 
+  var newsLink = "/";
+  var newsHeader = "News";
+  var aboutLink = "/about";
+  var aboutHeader = "About";
+  var shopLink = "/shop";
+  var shopHeader = "Shop";
+  var cartLink = "/cart";
+  var cartHeader = "Cart";
+  var contactLink = "/contact";
+  var contactHeader = "Contact";
+  var textileLink = "/shop/textile";
+  var textileHeader = "Textile";
+  var foodLink = "/shop/food";
+  var foodHeader = "Food";
+
+  if (isCz) {
+    newsLink = "/cz";
+    newsHeader = "Novinky";
+    aboutLink = "/cz/about";
+    aboutHeader = "O nás";
+    shopLink = "/cz/shop";
+    shopHeader = "Obchod";
+    cartLink = "/cz/cart";
+    cartHeader = "Košík";
+    contactLink = "/cz/contact";
+    contactHeader = "Kontakt";
+    textileLink = "/cz/shop/textile";
+    textileHeader = "Látky";
+    foodLink = "/cz/shop/food";
+    foodHeader = "Pamlsky";
+  }
+
   return (
     <header className="header">
       <div className="img-wrap-banner">
@@ -31,23 +63,23 @@ const Header = () => {
       </div>
       <h1>RegoDog</h1>
       <div className="navbar">
-        <Link to="/">News</Link>
-        <Link to="/about">About</Link>
+        <Link to={newsLink}>{newsHeader}</Link>
+        <Link to={aboutLink}>{aboutHeader}</Link>
         <div className="dropdown">
-          <Link to="/shop" className="dropbtn">
-            Shop
+          <Link to={shopLink} className="dropbtn">
+            {shopHeader}
           </Link>
           <div className="dropdown-content">
             <div className="list-wrap">
-              <Link to="shop/textile">Textile</Link>
+              <Link to={textileLink}>{textileHeader}</Link>
             </div>
             <div className="list-wrap">
-              <Link to="shop/food">Food</Link>
+              <Link to={foodLink}>{foodHeader}</Link>
             </div>
           </div>
         </div>
-        <Link to="/cart">Cart</Link>
-        <Link to="/Contact">Contact</Link>
+        <Link to={cartLink}>{cartHeader}</Link>
+        <Link to={contactLink}>{contactHeader}</Link>
       </div>
       <div className="flags">
         <button onClick={czToEng} className="lang-button" disabled={isEng}>

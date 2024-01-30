@@ -10,7 +10,7 @@ const Product = ({ name, price, img, description }) => {
         alt={name}
       ></img>
       <p>{description}</p>
-      <p>${price}</p>
+      <p>{price}</p>
       <button>Add to Cart</button>
     </section>
   );
