@@ -4,22 +4,34 @@ import "../css/Header.css";
 import banImg from "../img/IMG_0414.JPG";
 import usflag from "../img/usflag.png";
 import czflag from "../img/czflag.png";
+import deflag from "../img/deflag.png";
 
 const Header = () => {
   const currentPath = useLocation().pathname;
   const navigate = useNavigate();
-  const isEng = !currentPath.includes("/cz");
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
   const isCz = currentPath.includes("/cz");
-  const czToEng = () => {
-    if (currentPath.includes("/cz")) {
-      const newPath = currentPath.replace("/cz", "");
+  const isDe = currentPath.includes("/de");
+  const toEng = () => {
+    if (!isEng) {
+      var newPath = currentPath.replace("/cz", "");
+      newPath = newPath.replace("/de", "");
       navigate(newPath);
     }
   };
-
-  const engToCz = () => {
-    if (!currentPath.includes("/cz")) {
-      const newPath = "/cz" + currentPath;
+  const toCz = () => {
+    if (!isCz) {
+      var newPath = currentPath.replace("/cz", "");
+      newPath = newPath.replace("/de", "");
+      newPath = "/cz" + newPath;
+      navigate(newPath);
+    }
+  };
+  const toDe = () => {
+    if (!isDe) {
+      var newPath = currentPath.replace("/cz", "");
+      newPath = newPath.replace("/de", "");
+      newPath = "/de" + newPath;
       navigate(newPath);
     }
   };
@@ -54,6 +66,21 @@ const Header = () => {
     textileHeader = "Látky";
     foodLink = "/cz/shop/food";
     foodHeader = "Pamlsky";
+  } else if (isDe) {
+    newsLink = "/de";
+    newsHeader = "Nachricht";
+    aboutLink = "/de/about";
+    aboutHeader = "Über uns";
+    shopLink = "/de/shop";
+    shopHeader = "Geschäft";
+    cartLink = "/de/cart";
+    cartHeader = "Wagen";
+    contactLink = "/de/contact";
+    contactHeader = "Kontakt";
+    textileLink = "/de/shop/textile";
+    textileHeader = "Textil";
+    foodLink = "/de/shop/food";
+    foodHeader = "Leckereien";
   }
 
   return (
@@ -82,10 +109,13 @@ const Header = () => {
         <Link to={contactLink}>{contactHeader}</Link>
       </div>
       <div className="flags">
-        <button onClick={czToEng} className="lang-button" disabled={isEng}>
+        <button onClick={toEng} className="lang-button" disabled={isEng}>
           <img alt="United States" className="img-flag" src={usflag} />
         </button>
-        <button onClick={engToCz} className="lang-button" disabled={isCz}>
+        <button onClick={toDe} className="lang-button" disabled={isDe}>
+          <img alt="German" className="img-flag" src={deflag} />
+        </button>
+        <button onClick={toCz} className="lang-button" disabled={isCz}>
           <img alt="Czech" className="img-flag" src={czflag} />
         </button>
       </div>

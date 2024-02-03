@@ -5,11 +5,14 @@ import { Link, useLocation } from "react-router-dom";
 
 const Food = () => {
   const currentPath = useLocation().pathname;
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
   const isCz = currentPath.includes("/cz");
-  const isEng = !currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
   var foodHeader = "Food";
   if (isCz) {
     foodHeader = "Pamlsky";
+  } else if (isDe) {
+    foodHeader = "Leckereien";
   }
   return (
     <section>
@@ -30,9 +33,20 @@ const Food = () => {
           products.food.map((product) => (
             <Link to={`/cz/shop/food/${product.link}`} className="link">
               <ProductDisplay
-                key={product.link + "-food-div"}
+                key={product.link + "-food-div-cz"}
                 name={product.name_cz}
                 price={product.price_cz}
+                img={product.img}
+              ></ProductDisplay>
+            </Link>
+          ))}
+        {isDe &&
+          products.food.map((product) => (
+            <Link to={`/de/shop/food/${product.link}`} className="link">
+              <ProductDisplay
+                key={product.link + "-food-div-de"}
+                name={product.name_de}
+                price={product.price_de}
                 img={product.img}
               ></ProductDisplay>
             </Link>

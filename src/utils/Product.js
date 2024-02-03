@@ -1,6 +1,11 @@
 import "../css/Product.css";
+import { useLocation } from "react-router-dom";
 
 const Product = ({ name, price, img, description }) => {
+  const currentPath = useLocation().pathname;
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
+  const isCz = currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
   return (
     <section>
       <h2>{name}</h2>
@@ -11,7 +16,9 @@ const Product = ({ name, price, img, description }) => {
       ></img>
       <p>{description}</p>
       <p>{price}</p>
-      <button>Add to Cart</button>
+      {isEng && <button>Add to Cart</button>}
+      {isCz && <button>Přidat do košíku</button>}
+      {isDe && <button>In den Warenkorb legen</button>}
     </section>
   );
 };

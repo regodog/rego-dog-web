@@ -22,14 +22,19 @@ function App() {
       <Routes>
         <Route exact path="/" element={<News />} />
         <Route path="/cz" element={<News />} />
+        <Route path="/de" element={<News />} />
         <Route path="/about" element={<About />} />
         <Route path="/cz/about" element={<About />} />
+        <Route path="/de/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/cz/shop" element={<Shop />} />
+        <Route path="/de/shop" element={<Shop />} />
         <Route path="/shop/textile" element={<Textile />} />
         <Route path="/cz/shop/textile" element={<Textile />} />
+        <Route path="/de/shop/textile" element={<Textile />} />
         <Route path="/shop/food" element={<Food />} />
         <Route path="/cz/shop/food" element={<Food />} />
+        <Route path="/de/shop/food" element={<Food />} />
         {products.textile.map((product) => (
           <Route
             key={product.link + "-textile"}
@@ -58,6 +63,20 @@ function App() {
             }
           ></Route>
         ))}
+        {products.textile.map((product) => (
+          <Route
+            key={product.link + "-textile-de"}
+            path={`/de/shop/textile/${product.link}`}
+            element={
+              <Product
+                name={product.name_de}
+                price={product.price_de}
+                img={product.img}
+                description={product.description_de}
+              ></Product>
+            }
+          ></Route>
+        ))}
         {products.food.map((product) => (
           <Route
             key={product.link + "-food"}
@@ -82,6 +101,20 @@ function App() {
                 price={product.price_cz}
                 img={product.img}
                 description={product.description_cz}
+              ></Product>
+            }
+          ></Route>
+        ))}
+        {products.food.map((product) => (
+          <Route
+            key={product.link + "-food-de"}
+            path={`/de/shop/food/${product.link}`}
+            element={
+              <Product
+                name={product.name_de}
+                price={product.price_de}
+                img={product.img}
+                description={product.description_de}
               ></Product>
             }
           ></Route>
@@ -172,8 +205,52 @@ function App() {
             />
           );
         })}
+        {news.news.map((newsItem) => {
+          let newsComponent;
+
+          switch (newsItem.template) {
+            case "News1":
+              newsComponent = (
+                <News1
+                  header={newsItem.header_de}
+                  date={newsItem.date}
+                  img={newsItem.img}
+                  paragraph={newsItem.paragraph_de}
+                />
+              );
+              break;
+            case "News2":
+              newsComponent = (
+                <News2
+                  header={newsItem.header_de}
+                  date={newsItem.date}
+                  img={newsItem.img}
+                  youtube={newsItem.youtube}
+                  paragraph={newsItem.paragraph_de}
+                />
+              );
+              break;
+            default:
+              newsComponent = (
+                <News1
+                  header={newsItem.header_de}
+                  date={newsItem.date}
+                  img={newsItem.img}
+                  paragraph={newsItem.paragraph_de}
+                />
+              );
+          }
+          return (
+            <Route
+              key={newsItem.link + "-news-de"}
+              path={`/de/${newsItem.link}`}
+              element={newsComponent}
+            />
+          );
+        })}
         <Route path="/contact" />
         <Route path="/cz/contact" />
+        <Route path="/de/contact" />
       </Routes>
       <Contact />
     </HashRouter>

@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 const Shop = () => {
   const currentPath = useLocation().pathname;
   const isCz = currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
 
   var shopHeader = "Shop";
   var textileLink = "/shop/textile";
@@ -18,6 +19,13 @@ const Shop = () => {
     foodLink = "/cz/shop/food";
     textileHeader = "Látky";
     foodHeader = "Pamlsky";
+  }
+  if (isDe) {
+    shopHeader = "Geschäft";
+    textileLink = "/de/shop/textile";
+    foodLink = "/de/shop/food";
+    textileHeader = "Textil";
+    foodHeader = "Leckereien";
   }
   return (
     <section>

@@ -5,10 +5,13 @@ import { useLocation } from "react-router-dom";
 
 const Contact = () => {
   const currentPath = useLocation().pathname;
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
   const isCz = currentPath.includes("/cz");
-  const isEng = !currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
   var contactHeader = "Contact";
   if (isCz) {
+    contactHeader = "Kontakt";
+  } else if (isDe) {
     contactHeader = "Kontakt";
   }
   return (
@@ -16,6 +19,7 @@ const Contact = () => {
       <h2>{contactHeader}</h2>
       {isEng && <p>Phone: (+1) 646-702-3278</p>}
       {isCz && <p>Telefonní číslo: (+1) 646-702-3278</p>}
+      {isDe && <p>Telefon: (+1) 646-702-3278</p>}
       <div className="contact-social-icons">
         <a
           href="https://www.instagram.com/rego_dog/"

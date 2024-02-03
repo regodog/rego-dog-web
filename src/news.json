@@ -1,21 +1,22 @@
 {
     "news": [
       {
-        "header": "Test 1",
+        "header": "Meet the Breed",
         "header_cz": "Test 1 cj",
+        "header_de": "Test 1 de",
         "link": "test1",
         "template": "News1",
-        "thumbnail": "2.jpg",
+        "thumbnail": "meetTheBreed.jpg",
         "date": "1/28/2024",
-        "img": ["32.jpg", "2.jpg"],
-        "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Only you have this."],
-        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
+        "img": ["meetTheBreed.jpg"],
+        "paragraph": ["Going to Meet the Breeds is like going to a dog show. The difference is, that there are definitely more people than dogs and you don’t just get a few minutes of fame in the ring with your doggie but you and your furry friend are on display, greeting many fans and answering questions the whole day. However, in both you need a lot of patience and so does your four legged buddy. I can imagine that most dogs show similar excitement like ours when we tell them on Saturday morning that we are going on a trip. Our boys immediately “pack their backpacks” and will not let us out of their sight until they know for sure we did not forget them and they can jump into the back of the car. And off we go. The drive is mostly smooth with the boys sleeping, occasionally changing positions, until we slow down or reach a city. They know. They know we have arrived and they let us know that they know. Getting out of the car has its rules too, otherwise it could become a nightmare. Someone is always a dedicated dog holder and everyone else helps with all the stuff – crates, grooming table, blow drier and couple bags of grooming supplies, at least two folding chairs and a few other bags with food, snacks and water for the whole crew, dogs included. Two, three, sometimes four people are great if helping, I am not joking. The dogs are happily hauling their way into the exhibit hall, the handler trying to keep up with their pace, watching carefully so that the schnauzers don’t run into any wet grass, or puddle, pee on someone’s stuff left outside of another car being unloaded, or start matching up with other boys before the event starts. If the dedicated handler manages to get the excited dogs in, followed by the already exhausted helping crew, it’s half of the victory. I do not know why, but no matter how careful I am and how much I watch, if I am the handler, the schnauzers always get to the station and their legs are wet and so are their beards. So the blow drying routine we had at 5 a.m. needs to be repeated again. By this time, the boys know, they enjoy being brushed and given the final grooming touch, standing proudly on a table like two celebrities. They continue with the happy mood in the ring, giving their best performance. I have said once, when Eggie was a puppy, that I would not force him to show if he did not have it in him. He seems to have that talent and so does Berry. I am a lucky schnauzer mom because I have the best of breed and the boys naturally show standard schnauzers in a full beauty. At the end of the day, everyone is exhausted but happy at the same time because the ShowTime mission is always successfully accomplished. "],
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."],
+        "paragraph_de": ["German"]
       },
       {
         "header": "Test 2",
         "header_cz":"Test 2 cj",
+        "header_de":"Test 2 de",
         "link": "test2",
         "template": "News1",
         "thumbnail": "32.jpg",
@@ -24,11 +25,13 @@
         "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. No I don't."],
-        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."],
+        "paragraph_de": ["German"]
       },
       {
         "header": "Test 3",
         "header_cz":"Test 3 cj",
+        "header_de":"Test 3 de",
         "link": "test3",
         "template": "News2",
         "youtube": "https://www.youtube.com/embed/uBnpq0DDCps",
@@ -37,7 +40,8 @@
         "img": ["32.jpg"],
         "paragraph": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique. No I don't."],
-        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."]
+        "paragraph_cz": ["Tohle je zkouska ze to preklada do cj."],
+        "paragraph_de": ["German"]
       }
     ] 
   }

@@ -4,11 +4,14 @@ import { useLocation } from "react-router-dom";
 
 const About = () => {
   const currentPath = useLocation().pathname;
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
   const isCz = currentPath.includes("/cz");
-  const isEng = !currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
   var abtHeader = "About us";
   if (isCz) {
     abtHeader = "O nás";
+  } else if (isDe) {
+    abtHeader = "Über uns";
   }
   return (
     <section>
@@ -52,6 +55,25 @@ const About = () => {
                 potomků, BlueBerry. Berry, stejně jako Eggie, má také mnoho
                 přezdívek jako Berdík, Berda, Berin a Berousek.
                 .....pokračovat....
+              </p>
+            )}
+            {isDe && (
+              <p>
+                Alles, was wir bei RegoDog tun, ist vom Unbedingten inspiriert
+                Liebe für unsere beiden Standardschnauzer Valegro od Dalajskeho
+                Potoka und sein Sohn Blueberry od Dalajskeho Potoka. Wir sind
+                auf einem Schnauzer-Reise, die begann, als wir ein kleines
+                Schwarzes mitbrachten Standard-Schnauzer-Welpenheim. Es war
+                Valegro und trotz vieler Spitznamenvorschläge wie Egis, Ego,
+                Vali, Valda, Vale we beschloss, ihn Eggie zu nennen. Aber bald
+                stellte sich heraus, dass Eggie es getan hatte mehrere andere
+                Namen wie Egisek, Egoushek, Egonek und jetzt wir Ich nenne ihn
+                sogar gerne Gustik. Warum haben wir uns so viele ausgedacht?
+                Namen? Keine Ahnung, sie sind einfach zufällig, aber Eggie weiß,
+                dass sie es sind alle seine. Als Eggie etwa vier Jahre alt war,
+                brachten wir eines von ihm mit nach Hause Nachkommen, BlueBerry.
+                Berry hat wie Eggie auch viele Spitznamen wie Berdik, Berda,
+                Berin und Berousek. .....weitermachen....
               </p>
             )}
           </div>

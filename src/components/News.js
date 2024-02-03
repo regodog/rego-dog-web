@@ -9,8 +9,9 @@ const News = () => {
   const [found, setFound] = useState(true);
 
   const currentPath = useLocation().pathname;
+  const isEng = !(currentPath.includes("/cz") || currentPath.includes("/de"));
   const isCz = currentPath.includes("/cz");
-  const isEng = !currentPath.includes("/cz");
+  const isDe = currentPath.includes("/de");
 
   var newsHeader = "News";
   var newsSearch = "Search...";
@@ -18,6 +19,9 @@ const News = () => {
   if (isCz) {
     newsHeader = "Novinky";
     newsSearch = "Hledej...";
+  } else if (isDe) {
+    newsHeader = "Nachricht";
+    newsHeader = "Suchen";
   }
 
   const handleSearch = (value) => {
@@ -42,6 +46,16 @@ const News = () => {
           ) ||
           newsItem.date.includes(value.toLowerCase()) ||
           newsItem.header_cz.toLowerCase().includes(value.toLowerCase())
+      );
+    } else if (isDe) {
+      wasFound = news.news.some(
+        (newsItem) =>
+          value === "" ||
+          newsItem.paragraph_de.some((str) =>
+            str.toLowerCase().includes(value.toLowerCase())
+          ) ||
+          newsItem.date.includes(value.toLowerCase()) ||
+          newsItem.header_de.toLowerCase().includes(value.toLowerCase())
       );
     }
     setFound(wasFound);
@@ -96,6 +110,31 @@ const News = () => {
           </Link>
         )
     );
+  } else if (isDe) {
+    searchedRes = news.news.map(
+      (newsItem) =>
+        (searchTerm === "" ||
+          newsItem.paragraph_de.some((str) =>
+            str.toLowerCase().includes(searchTerm.toLowerCase())
+          ) ||
+          newsItem.date.includes(searchTerm.toLowerCase()) ||
+          newsItem.header_de
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase())) && (
+          <Link
+            key={newsItem.link + "-news-de"}
+            to={"/de/" + newsItem.link}
+            className="news-link-display"
+          >
+            <NewsDisplay
+              header={newsItem.header_de}
+              date={newsItem.date}
+              paragraph={newsItem.paragraph_de}
+              thumbnail={newsItem.thumbnail}
+            />
+          </Link>
+        )
+    );
   }
   return (
     <section>
@@ -107,6 +146,7 @@ const News = () => {
           <div className="news-no-resut-found">
             {isEng && <p>No results found.</p>}
             {isCz && <p>Nebyly nalezeny žádné výsledky.</p>}
+            {isDe && <p>Keine Ergebnisse gefunden.</p>}
           </div>
         )}
 

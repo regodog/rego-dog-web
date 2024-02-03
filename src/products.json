@@ -3,64 +3,82 @@
     {
       "name": "Textile 1",
       "name_cz": "Látka 1",
+      "name_de": "Textil 1",
       "link": "textile1",
       "price": "$29.99",
       "price_cz": "300 Kč",
+      "price_de": "25€",
       "img": "20211031_133303.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz": "Tohle je test description o tomhle produktu."
+      "description_cz": "Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     },
     {
       "name": "Textile 2",
       "name_cz": "Látka 2",
+      "name_de":"Textil 2",
       "link": "textile2",
       "price": "$39.99",
       "price_cz": "300 Kč",
+      "price_de": "35€",
       "img": "20211031_133303.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz": "Tohle je test description o tomhle produktu."
+      "description_cz": "Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     }
   ],
   "food": [
     {
       "name": "Product 1",
       "name_cz": "Produkt 1",
+      "name_de": "Produkt 1 de",
       "link": "product1",
       "price": "$29.99",
       "price_cz": "350 Kč",
+      "price_de": "25€",
       "img": "IMG_0932.JPG",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz": "Tohle je test description o tomhle produktu."
+      "description_cz": "Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     },
     {
       "name": "Product 2",
       "name_cz": "Produkt 2",
+      "name_de": "Produkt 2 de",
       "link": "product2",
       "price": "$39.99",
       "price_cz": "400 Kč",
+      "price_de": "35€",
       "img": "IMG_0932.JPG",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz":"Tohle je test description o tomhle produktu."
+      "description_cz":"Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     },
     {
       "name": "Product 3",
       "name_cz": "Produkt 3",
+      "name_de": "Produkt 3 de",
       "link": "product3",
       "price": "$49.99",
       "price_cz": "550 Kč",
+      "price_de": "45€",
       "img": "IMG_0932.JPG",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz":"Tohle je test description o tomhle produktu."
+      "description_cz":"Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     },
     {
       "name": "Product 4",
       "name_cz": "Produkt 4",
+      "name_de": "Produkt 4 de",
       "link": "product4",
       "price": "$19.99",
       "price_cz": "500 Kč",
+      "price_de": "15€",
       "img": "IMG_0932.JPG",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non tortor vel est semper tristique.",
-      "description_cz":"Tohle je test description o tomhle produktu."
+      "description_cz":"Tohle je test description o tomhle produktu.",
+      "description_de": "German"
     }
   ]
 }
